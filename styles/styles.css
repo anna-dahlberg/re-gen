@@ -58,7 +58,6 @@ body {
 /* Main product styling */
 
 .mainProduct {
-    border: 1px solid red;
     display: flex;
     width: 390px;
     padding: 16px;
