@@ -55,3 +55,41 @@ body {
 }
 
 /* Button styling */
+
+.moreInfoButton {
+    border: 1px solid var(--black);
+    display: flex;
+    height: 37px;
+    padding: 4px;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+
+}
+
+.preOrderButton {
+    color: var(--white);
+    border-radius: 42px;
+    background-color: var(--black);
+    backdrop-filter: blur(31.75px);
+    padding: 0 24px;
+    display: inline-flex;
+    height: 37px;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.preOrderButton:hover {
+    color: var(--white);
+    border-radius: 42px;
+    background-color: var(--black);
+    backdrop-filter: blur(31.75px);
+    padding: 0 24px;
+    display: inline-flex;
+    height: 37px;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    font-size: 20px;
+}
