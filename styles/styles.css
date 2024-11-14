@@ -38,7 +38,7 @@ body {
     padding: 0;
 }
 
-/* Grid styling */
+/* header styling */
 
 .logo-container {
     height: 62px;
@@ -53,6 +53,68 @@ body {
     width: 40px;
     height: 40px;
 }
+
+
+/* Main product styling */
+
+.mainProduct {
+    border: 1px solid red;
+    display: flex;
+    width: 390px;
+    padding: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.productHeader {
+    font-size: 24px; 
+    line-height: 93.652%;
+    text-align: left;
+}
+
+.productContainer {
+    width: 358px;
+    gap: 8px;
+}
+
+.productImgContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.productImage {
+    height: 270px;
+    background-color: grey;
+    width: 358px;
+}
+
+.configurationBar {
+    height: 40px;
+    width: 160px;
+    display: flex;
+    padding: 4px 8px;
+    align-items: center;
+    gap: 24px;
+}
+
+.productInfoContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.boldInfo {
+    font-weight: bold;
+}
+
+#cloudContainer {
+    display: flex;
+    gap: 8px;
+}
+
 
 /* Button styling */
 
