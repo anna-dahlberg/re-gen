@@ -1,10 +1,36 @@
+/* Color Variables */
 :root {
-    --color-primary: #F675;
-    --color-primary: #36804F;
+    --white: #FFFFFF;
+    --black: #000000;
+    --grey: #E3E0D5;
+    --beige: #F9F3E5;
+    --brownLight: #B58A5B;
+    --brownDark: #A05E2B;
+    --orange: #F67512;
+    --green: #36804F;
+    --purple: #C4ACCC;
 }
+
+/* Fonts */
+
+@font-face {
+    font-family: 'IBM Plex Sans';
+    src: url(/assets/fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'IBM Plex Sans';
+    src: url(/assets/fonts/IBM_Plex_Sans/IBMPlexSans-Bold.ttf);
+    font-weight: 800;
+}
+
+/* Basic styling */
 
 * {
     box-sizing: border-box;
+    font-family: 'IBM Plex Sans';
+    font-size: 16px;
 }
 
 body {
@@ -12,10 +38,12 @@ body {
     padding: 0;
 }
 
+/* Grid styling */
+
 .logo-container {
     height: 62px;
     width: 100%;
-    background-color: #36804F;
+    background-color: var(--green);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,3 +53,5 @@ body {
     width: 40px;
     height: 40px;
 }
+
+/* Button styling */
