@@ -1,3 +1,7 @@
+:root {
+    --color-primary: #F675;
+}
+
 * {
     box-sizing: border-box;
 }
