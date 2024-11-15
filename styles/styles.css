@@ -40,10 +40,28 @@ body {
 
 /* header styling */
 
+.newsLetter {
+    display: flex;
+    width: 390px;
+    height: 48px;
+    padding: 4px 62px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    background-color: var(--grey);
+
+}
+
+.newsLetter p {
+    font-size: 12px;
+    font-weight: lighter;
+    text-align: center;
+}
+
 .logo-container {
     height: 62px;
     width: 100%;
-    background-color: var(--green);
+    background-color: var(--white);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,6 +71,16 @@ body {
     width: 40px;
     height: 40px;
 }
+
+/* Hero styling */
+
+.heroPictureContainer {
+    width: 100%;
+    height: 700px;
+    background-color: var(--grey);
+}
+
+
 
 
 /* Main product styling */
