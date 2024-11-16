@@ -76,11 +76,18 @@ body {
 
 .heroPictureContainer {
     width: 100%;
-    height: 700px;
+    height: 100vh;
     background-color: var(--grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
-
+.cta-button {
+    background-color: #36804F;
+    padding: 10px 40px;
+}
 
 
 /* Main product styling */
