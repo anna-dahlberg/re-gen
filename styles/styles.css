@@ -95,6 +95,21 @@ body {
     border-left:none;
 }
 
+
+.nav-overlay {
+    background-color: #5dedaa;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    transform: translateY(-100vh);
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-show {
+    transform: translateY(0vh);
+}
 /* Hero styling */
 
 .heroPictureContainer {
