@@ -72,6 +72,30 @@ body {
     height: 40px;
 }
 
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    height: 32px;
+}
+.nav-button {
+    flex-basis: 50%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid var(--black);
+    color: var(--black);
+}
+.nav-button:hover {
+    background-color: #c3c3c3; /*för test*/
+}
+.nav-button:last-child {
+    border-left:none;
+}
+
 /* Hero styling */
 
 .heroPictureContainer {
