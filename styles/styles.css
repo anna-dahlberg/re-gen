@@ -99,7 +99,7 @@ body {
 
 .heroPictureContainer {
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 48px - 62px - 32px);
     background-color: var(--grey);
     display: flex;
     justify-content: center;
