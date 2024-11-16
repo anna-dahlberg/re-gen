@@ -106,10 +106,28 @@ body {
     transform: translateY(-100vh);
     transition: transform 0.3s ease-in-out;
 }
+.nav-overlay ul li {
+    list-style: none;
+}
+
+.top-overlay {
+    height: 65px;
+    padding: 24px;
+    text-align: right;
+}
+.top-overlay a {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 16px;
+    font-weight: 400;
+}
 
 .menu-show {
     transform: translateY(0vh);
 }
+
+
+
 /* Hero styling */
 
 .heroPictureContainer {
