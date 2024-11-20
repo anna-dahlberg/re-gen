@@ -345,7 +345,6 @@ body {
     justify-content: center;
     align-items: center;
     gap: 8px;
-
 }
 
 .preOrderButton {
@@ -375,6 +374,62 @@ body {
     font-size: 20px;
 }
 
+/* ReUse Section Styling */
+
+.reUseSection {
+    height: 625px;
+    background-color: var(--orange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reUseContainer {
+    display: flex;
+    width: 358px;
+    height: 538px;
+    padding: 32px 16px;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    background: rgba(255, 255, 255, 0.39);
+
+    /* Blur */
+    backdrop-filter: blur(42.150001525878906px);
+}
+
+.reUseButton {
+    border: 1px solid var(--black);
+    display: flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: transparent;
+
+}
+
+/* ReUse Styling */
+
+.communityTextContainer {
+    color: var(--white);
+    background-color: var(--black);
+}
+
+.communityTextContainer h2 {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.communityTextContainer h2 strong {
+    font-size: 32px;
+}
+
+.communityTextContainer p {
+    line-height: 150%;
+}
 
 /* Footer styling */
 
