@@ -2,7 +2,7 @@
 :root {
     --white: #FFFFFF;
     --black: #000000;
-    --grey: #E3E0D5;
+    --grey: #E3E3E3;
     --beige: #F9F3E5;
     --brownLight: #B58A5B;
     --brownDark: #A05E2B;
@@ -46,15 +46,18 @@ body {
     justify-content: center;
     align-items: center;
     height: 48px;
-    padding:4px 62px;
+    padding:7px 20px;
     background-color: var(--grey);
-
 }
 
-.newsLetter p {
+.newsLetterText {
     font-size: 12px;
     font-weight: lighter;
     text-align: center;
+}
+
+.newsLetter p strong {
+    font-size: 12px;
 }
 
 .logo-container {
@@ -97,13 +100,12 @@ body {
 
 
 .nav-overlay {
-    background-color: #5dedaa;
+    background-color: var(--white);
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     transform: translateY(-100%);
-    
     transition: transform 0.3s ease-in-out;
 }
 .nav-overlay ul li {
@@ -173,7 +175,7 @@ body {
 .heroPictureContainer {
     width: 100%;
     height: calc(100vh - 48px - 62px - 32px);
-    background-color: var(--grey);
+    background-color: var(--black);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -181,8 +183,11 @@ body {
 }
 
 .cta-button {
-    background-color: #36804F;
-    padding: 10px 40px;
+    padding: 8px 16px;
+    border: 1px solid var(--white);
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
 }
 
 
