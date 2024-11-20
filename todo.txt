@@ -1,1 +1,2 @@
-Göra px til rem i slutet?
+- Göra px til rem i slutet
+- Lös "förbeställknapp" (kika med Smilla/Sofi)
