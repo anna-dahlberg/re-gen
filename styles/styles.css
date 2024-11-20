@@ -3,7 +3,7 @@
     --white: #FFFFFF;
     --black: #000000;
     --grey: #E3E3E3;
-    --beige: #F9F3E5;
+    --greyDark: #D9D9D9;
     --brownLight: #B58A5B;
     --brownDark: #A05E2B;
     --orange: #F67512;
@@ -15,8 +15,20 @@
 
 @font-face {
     font-family: 'IBM Plex Sans';
+    src: url(/assets/fonts/IBM_Plex_Sans/IBMPlexSans-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'IBM Plex Sans';
     src: url(/assets/fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf);
     font-weight: 400;
+}
+
+@font-face {
+    font-family: 'IBM Plex Sans';
+    src: url(/assets/fonts/IBM_Plex_Sans/IBMPlexSans-Medium.ttf);
+    font-weight: 500;
 }
 
 @font-face {
@@ -203,9 +215,14 @@ body {
 }
 
 .productHeader {
-    font-size: 24px; 
+    font-size: 30px; 
     line-height: 93.652%;
     text-align: left;
+}
+
+.productHeaderDescription {
+    font-size: 20px;
+    font-weight: 300;
 }
 
 .productContainer {
@@ -227,12 +244,14 @@ body {
 }
 
 .configurationBar {
-    height: 40px;
-    width: 160px;
     display: flex;
-    padding: 4px 8px;
-    align-items: center;
-    gap: 24px;
+    justify-content: center;
+    height: 40px;
+    width: 320px;
+    padding: 4px 16px;
+    gap: 32px;
+    border-radius: 100px;
+    border: 1px solid var(--black);
 }
 
 .productInfoContainer {
@@ -289,4 +308,65 @@ body {
     gap: 10px;
     flex-shrink: 0;
     font-size: 20px;
+}
+
+
+/* Footer styling */
+
+footer {
+    background-color: #D9D9D9;
+    width: 100vw;
+    height: 590px;  /* Mobile height */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 22px;
+}
+
+.footerContainer {
+    display: flex;
+    width: 342px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 46px;
+    height: 466px;
+}
+
+.footerLogo {
+    width: 48px;
+    height: 48px;
+}
+
+.footerNav{
+
+}
+
+.footerFirstContainer {
+    height: 250px;
+}
+
+.footerNavLinks {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+.communityLinks p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.footerButton {
+    display: flex;
+    width: 256px;
+    height: 41px;
+    padding: 0px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    background-color: var(--black);
+    text-transform: uppercase;
+    color: var(--white);
+    font-weight: 300;
 }

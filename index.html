@@ -92,6 +92,11 @@
     <section class="hero">
         <div class="heroPictureContainer">
             <!--ADD IMAGE FOR HERO HERE-->
+            <!-- <div class="heroText">
+                <p>ReGen</p>
+                <p>Framtidens mode, idag</p>
+                <p>Lanseras februari 2025</p>
+            </div> -->
             <a href="" class="cta-button">Utforska ReGen</a>
         </div>
     </section>
@@ -103,16 +108,18 @@
         <section class = "mainProduct">
 
             <div class="productHeader">ReGen - <br> på ditt sätt</div>
-            <div>ReGen – Armbandsur – Serie200</div>
+            <div class="productHeaderDescription">ReGen – Armbandsur – Serie200</div>
 
             <div class="productContainer">
 
                 <div class="productImgContainer">
                     <div class="productImage"></div>  <!--PLACE HOLDER FOR IMAGE -->
                     <div class="configurationBar">
-                        <img src="/assets/images/Button.svg" alt="">
-                        <img src="/assets/images/Button.svg" alt="">
-                        <img src="/assets/images/Button.svg" alt="">
+                        <img src="/assets/images/chevronLeft.svg" alt="">
+                        <img src="/assets/images/Button.svg" alt="" class="buttonGreen">
+                        <img src="/assets/images/Button.svg" alt="" class="buttonOrange">
+                        <img src="/assets/images/Button.svg" alt="" class="buttonLilac">
+                        <img src="/assets/images/chevronRight.svg" alt="">
                     </div>
                 </div>
 
@@ -177,22 +184,42 @@
 
     <!--Footer section-->
     <footer>
-        <img src="" alt="" class="footerLogo">
-        <nav class="footerNav">
-            <a href="">Om ReGen</a>
-            <a href="">Om ReUse</a>
-            <a href="">Kontakt</a>
-        </nav>
-        <p>Gå med i ReGen Community</p>
-        <span>Mailadress</span>
-        <input type="email" id="email" placeholder="namn@mail.com">
-        <button>Skicka</button>
+        
+        <div class="footerContainer">
 
-        <div class="footerIconContainer">
-            <img src="" alt="" class="footerLinkedIn">
-            <img src="" alt="" class="footerFacebook">
-            <img src="" alt="" class="footerInstgram">
+            <div class="footerFirstContainer">
+                <img src="/assets/images/ReGenLogo.svg" alt="" class="footerLogo">
+        
+                <nav class="footerNav">
+                    <div class="footerNavLinks">
+                        <a href="">Om ReGen</a>
+                        <img src="/assets/images/PlusIcon.svg" alt="">
+                    </div>
+                    <div class="footerNavLinks">
+                        <a href="">Om ReUse</a>
+                        <img src="/assets/images/PlusIcon.svg" alt="">
+                    </div>
+                    <div class="footerNavLinks">
+                        <a href="">Kontakt </a>
+                        <img src="/assets/images/PlusIcon.svg" alt="">
+                    </div>
+                </nav>
+            </div>
+    
+    
+            <div class="communityLinks">
+                <p>Gå med i ReGen Community</p>
+    
+                <button class="footerButton">Bli medlem</button>
+            </div>
+    
+            <div class="footerIconContainer">
+                <img src="/assets/images/LinkedInIcon.svg" alt="" class="footerLinkedIn">
+                <img src="/assets/images/FacebookIcon.svg" alt="" class="footerFacebook">
+                <img src="/assets/images/InstaIcon.svg" alt="" class="footerInstgram">
+            </div>
         </div>
+
     </footer>
     <script src="scripts/menu.js"></script> <!-- För responsiv meny-->
 </body>
