@@ -14,79 +14,111 @@
             <p class="newsLetterText">Få exklusiva nyheter om <strong>Tech Collection</strong> och 10% rabatt<br>
                 — signa upp idag</p>
         </div>
-
-        <div class="logo-container">
-            <img class="logo-header" alt="logo" src="/assets/images/reGenLogoSmall.svg">
-        </div>
-        <!-- endast för mobil visas denna menyn -->
-        <div class="nav-overlay">
-            <div class="top-overlay">
-                <a href="" class="close-menu-btn">Stäng</a>
-                <img src="/assets/images/closeIcon.svg" class="nav-icon" alt="">
+        
+        
+        <div class="logoNavContainer">
+            <div class="logo-container">
+                <img class="logo-header" alt="logo" src="/assets/images/reGenLogoSmall.svg">
             </div>
-            <div class="content-overlay">
-                <ul>
-                    <li>
-                        <p>Våra produkter</p>
-                        <span class="nav-icon">
-                            <img src="assets/images/PlusIcon.svg" alt="meny">
-                        </span>
-                    </li>
-                    <li>
-                        <p>Om ReGen</p>
-                        <span class="nav-icon">
-                            <img src="assets/images/PlusIcon.svg" alt="meny">
-                        </span>
-                    </li>
-                    <li>
-                        <p>Om ReUse</p>
-                        <span class="nav-icon">
-                            <img src="assets/images/PlusIcon.svg" alt="meny">
-                        </span>
-                    </li>
-                    <li>
-                        <p>Hållbarhet</p>
-                        <span class="nav-icon">
-                            <img src="assets/images/PlusIcon.svg" alt="meny">
-                        </span>
-                    </li>
-                    <li>
-                        <p>Kontakt</p>
-                        <span class="nav-icon">
-                            <img src="assets/images/PlusIcon.svg" alt="meny">
-                        </span>
-                    </li>
+    
+            <!-- endast för desktop visas menyn -->
+            <nav class="nav-desktop">
+                <ul class="navIcons">
+                    <li><a href="#">Tech Collection</a></li>
+                    <li><a href="#">ReUse</a></li>
+                    <li><a href="#">Om Regen</a></li>
+                    <li><a href="#">Kontakt</a></li>
                 </ul>
-                <div class="bottom-overlay">
-                    <a href="" class="language-button">
+                <ul class="navIconsLinks">
+                    <li><a href="#">
+                        <span class="nav-icon">
+                            <img src="assets/images/userIcon.svg" alt="meny">
+                        </span>
+                        Min Profil</a></li>
+                    <li><a href="#">
                         <span class="nav-icon">
                             <img src="assets/images/GlobeIcon.svg" alt="meny">
                         </span>
                         Svenska
-                    </a>
-                    <a href="" class="profile-button">
+                    </a></li>
+                    <li><a id="orderBtn" href="#">Förbeställ
                         <span class="nav-icon">
-                            <img src="assets/images/userIcon.svg" alt="varukorg">
+                            <img src="assets/images/CartIconWhite.svg" alt="meny">
                         </span>
-                        Min profil
-                    </a>
+                    </a></li>
+                </ul>
+            </nav>
+            <!-- endast för mobil visas denna menyn -->
+            <div class="nav-overlay">
+                <div class="top-overlay">
+                    <a href="" class="close-menu-btn">Stäng</a>
+                    <img src="/assets/images/closeIcon.svg" class="nav-icon" alt="">
                 </div>
+                <div class="content-overlay">
+                    <ul>
+                        <li>
+                            <p>Våra produkter</p>
+                            <span class="nav-icon">
+                                <img src="assets/images/PlusIcon.svg" alt="meny">
+                            </span>
+                        </li>
+                        <li>
+                            <p>Om ReGen</p>
+                            <span class="nav-icon">
+                                <img src="assets/images/PlusIcon.svg" alt="meny">
+                            </span>
+                        </li>
+                        <li>
+                            <p>Om ReUse</p>
+                            <span class="nav-icon">
+                                <img src="assets/images/PlusIcon.svg" alt="meny">
+                            </span>
+                        </li>
+                        <li>
+                            <p>Hållbarhet</p>
+                            <span class="nav-icon">
+                                <img src="assets/images/PlusIcon.svg" alt="meny">
+                            </span>
+                        </li>
+                        <li>
+                            <p>Kontakt</p>
+                            <span class="nav-icon">
+                                <img src="assets/images/PlusIcon.svg" alt="meny">
+                            </span>
+                        </li>
+                    </ul>
+                    <div class="bottom-overlay">
+                        <a href="" class="language-button">
+                            <span class="nav-icon">
+                                <img src="assets/images/GlobeIcon.svg" alt="meny">
+                            </span>
+                            Svenska
+                        </a>
+                        <a href="" class="profile-button">
+                            <span class="nav-icon">
+                                <img src="assets/images/userIcon.svg" alt="varukorg">
+                            </span>
+                            Min profil
+                        </a>
+                    </div>
+                </div>
+           
             </div>
-       
+            
+            <nav class="navbar">
+                <a href="" class="nav-button nav-button-menu">Meny
+                    <span class="nav-icon">
+                        <img src="assets/images/MenuIcon.svg" alt="meny">
+                    </span>
+                </a>
+                <a href="" class="nav-button">Varukorg
+                    <span class="nav-icon">
+                        <img src="assets/images/CartIcon.svg" alt="varukorg">
+                    </span>
+                </a>
+            </nav>
         </div>
-        
-        <nav class="navbar">
-            <a href="" class="nav-button nav-button-menu">Meny
-                <span class="nav-icon">
-                    <img src="assets/images/MenuIcon.svg" alt="meny">
-                </span>
-            </a>
-            <a href="" class="nav-button">Varukorg
-                <span class="nav-icon">
-                    <img src="assets/images/CartIcon.svg" alt="varukorg">
-                </span>
-            </a>
-        </nav>
+       
     </header>
 
     <!--Hero section-->

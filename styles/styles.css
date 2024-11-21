@@ -78,20 +78,42 @@ body {
     font-size: 12px;
 }
 
-.logo-container {
-    height: 62px;
-    width: 100%;
-    background-color: var(--white);
+.nav-desktop {
+    display: none;
+}
+
+.nav-desktop ul {
+    list-style: none;
+    padding: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.logo-header {
-    width: 40px;
-    height: 40px;
+.navIcons {
+    display: flex;
+    gap: 48px;
+    margin-right: 48px;
 }
 
+.nav-desktop a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.navIconsLinks {
+    display: flex;
+    gap: 24px;
+}
+
+#orderBtn {
+    text-decoration: none;
+    padding: 10px 24px;
+    border-radius: 42px;
+    color: var(--white);
+    background-color: var(--black);
+}
+
+
+/*mobile navbar*/
 .navbar {
     display: flex;
     flex-direction: row;
@@ -99,6 +121,43 @@ body {
     text-align: center;
     height: 32px;
 }
+
+@media (min-width: 1024px) {
+    .logoNavContainer {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 48px;
+    }
+
+    .nav-desktop {
+      display: flex;
+    }
+
+    .navbar {
+        display: none;
+    }
+  }
+
+/* gör om denna så den passar i ovan ist?*/
+@media (max-width: 1024px) {
+    .logo-container {
+        height: 62px;
+        width: 100%;
+        background-color: var(--white);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.logo-header {
+    width: 40px;
+    height: 40px;
+}
+
+
 .nav-button {
     flex-basis: 50%;
     text-decoration: none;
