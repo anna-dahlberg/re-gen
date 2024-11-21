@@ -9,6 +9,7 @@
     --orange: #F67512;
     --green: #36804F;
     --purple: #C4ACCC;
+    --beige: #EFEDE9;
 }
 
 /* Fonts */
@@ -58,6 +59,8 @@ body {
 
 /* header styling */
 
+
+/* newsletter styling */
 .newsLetter {
     width: 100%;
     display: flex;
@@ -74,9 +77,22 @@ body {
     text-align: center;
 }
 
-.newsLetter p strong {
+.newsLetter p strong, .newsLetter p span {
     font-size: 12px;
 }
+
+.newsLetter p a {
+    font-size: 12px;
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+}
+
+.lineBreak {
+    display: block;
+}
+
+
 
 .nav-desktop {
     display: none;
@@ -123,6 +139,10 @@ body {
 }
 
 @media (min-width: 1024px) {
+    .lineBreak {
+        display: inline;
+    }
+
     .logoNavContainer {
         width: 100%;
         display: flex;
@@ -176,7 +196,7 @@ body {
 }
 
 
-.nav-overlay {
+.nav-overlay, .news-overlay {
     background-color: var(--white);
     position: absolute;
     top: 0;
@@ -185,7 +205,73 @@ body {
     transform: translateY(-100%);
     transition: transform 0.3s ease-in-out;
 }
-.nav-overlay ul li {
+
+
+.news-overlay {
+    background-color: #36804F;
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+
+.infoContent {
+    flex-basis: 100%;
+    background-color: var(--beige);
+}
+
+.newsHero {
+    background-color: #A05E2B;
+    display: none;
+}
+
+.logo-hero {
+    width: 118px;
+    height: 118px;
+}
+
+@media (min-width: 1024px) {
+    .newsHero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .newsHero, .infoContent {
+        flex-basis: 50%;
+    }
+}
+
+.infoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoContainer h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.infoContainer form {
+    display: flex;
+    
+}
+
+.infoContainer input {
+    border: 1px solid var(--black);
+    border-right: 0px;
+}
+
+.infoContainer button {
+    padding: 5px 10px;
+    border-radius: 0;
+    background-color: var(--black);
+    color: var(--white);
+    border: 1px solid var(--black);
+}
+
+.nav-overlay ul li{
     list-style: none;
     font-size: 16px;
     display: flex;
