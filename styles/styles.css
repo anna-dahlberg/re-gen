@@ -385,9 +385,10 @@ body {
 }
 
 .reUseContainer {
+    font-weight: 300;
     display: flex;
     width: 358px;
-    height: 538px;
+    height: auto;
     padding: 32px 16px;
     flex-direction: column;
     align-items: center;
@@ -396,6 +397,15 @@ body {
 
     /* Blur */
     backdrop-filter: blur(42.150001525878906px);
+}
+
+.reUseContainer p {
+    padding: 0;
+    margin: 0;
+}
+
+.reUseLogo {
+   height: 162px;
 }
 
 .reUseButton {
@@ -416,11 +426,14 @@ body {
 .communityTextContainer {
     color: var(--white);
     background-color: var(--black);
+    padding: 0 14px;
 }
 
 .communityTextContainer h2 {
     font-size: 32px;
     font-weight: 400;
+    padding-top: 57px;
+    margin: 0;
 }
 
 .communityTextContainer h2 strong {
@@ -429,7 +442,31 @@ body {
 
 .communityTextContainer p {
     line-height: 150%;
+    margin: 0;
 }
+
+.communityButton {
+    font-size: 20px;
+    color: var(--white);
+    font-weight: 600;
+    border: 1px solid var(--white);
+    background-color: transparent;
+    display: inline-flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.communityImageContainer {
+    background: url(/assets/images/communityImage.jpeg) lightgray -100.5px -2.747px / 139.026% 101.256% no-repeat;
+    height: 342px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   padding-top: 28px; 
+}
+
 
 /* Footer styling */
 
