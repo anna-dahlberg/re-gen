@@ -613,12 +613,33 @@ body {
 }
 
 
+/* Footer styling - Desktop */
+.dfooterContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.dfooterNavLinks h3 {
+    color: var(--black);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.sublinks {
+    list-style: none;
+}
+
+.sublinks a {
+    text-decoration: none;
+}
+
 /* Footer styling */
 
 footer {
     background-color: #D9D9D9;
-    width: 100vw;
-    height: 590px;  /* Mobile height */
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
