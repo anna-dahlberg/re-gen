@@ -632,11 +632,24 @@ body {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    margin: 0 0 15px 0;
+}
+
+.dfooterNavLinks p {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 20px 0 16px 0;
 }
 
 .sublinks {
     list-style: none;
     padding: 0;
+}
+
+.sublinks li {
+    margin-bottom: 12px;
 }
 
 .sublinks li a {
