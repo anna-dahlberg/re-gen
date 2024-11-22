@@ -253,7 +253,7 @@ body {
     font-weight: 600;
 }
 
-.infoContainer form {
+.infoContainer form div {
     display: flex;
     
 }
