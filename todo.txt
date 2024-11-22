@@ -1,4 +1,3 @@
 - Göra px til rem i slutet
 
 - Lös "förbeställknapp" (kika med Smilla/Sofi)
-- Bild för ReUSe

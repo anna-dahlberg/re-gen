@@ -55,6 +55,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: var(--beige);
 }
 
 /* header styling */
@@ -93,7 +94,9 @@ body {
 }
 
 
-
+header {
+    background-color: var(--white);
+}
 .nav-desktop {
     display: none;
 }
@@ -276,6 +279,10 @@ body {
     font-size: 16px;
     display: flex;
     justify-content: space-between;
+}
+
+.nav-overlay {
+    background-color: var(--beige);
 }
 
 .top-overlay {
@@ -642,6 +649,7 @@ body {
 .reUseContainer p {
     padding: 0;
     margin: 0;
+    
 }
 
 .reUseLogo {
