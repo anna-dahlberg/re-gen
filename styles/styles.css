@@ -614,9 +614,16 @@ body {
 
 
 /* Footer styling - Desktop */
-.dfooterContainer {
-    display: flex;
-    flex-direction: row;
+.desktopFooterContainer {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    .desktopFooterContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
 .dfooterNavLinks h3 {
@@ -629,10 +636,12 @@ body {
 
 .sublinks {
     list-style: none;
+    padding: 0;
 }
 
-.sublinks a {
+.sublinks li a {
     text-decoration: none;
+    color: var(--black);
 }
 
 /* Footer styling */
@@ -640,13 +649,15 @@ body {
 footer {
     background-color: #D9D9D9;
     width: 100%;
+    /*
     display: flex;
     justify-content: space-between;
     align-items: center;
+    */
     padding: 40px 22px;
 }
 
-.footerContainer {
+.mobileFooterContainer {
     display: flex;
     width: 342px;
     flex-direction: column;
@@ -654,6 +665,12 @@ footer {
     align-items: center;
     gap: 46px;
     height: 466px;
+}
+
+@media (min-width: 1024px) {
+    .mobileFooterContainer {
+        display: none;
+    }
 }
 
 .footerLogo {
@@ -711,6 +728,7 @@ footer {
     text-transform: uppercase;
     color: var(--white);
     font-weight: 300;
+    text-decoration: none;
 }
 
 .footerIconContainer {
