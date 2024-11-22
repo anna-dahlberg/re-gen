@@ -334,25 +334,120 @@ body {
 
 
 /* Hero styling */
-
 .heroPictureContainer {
     width: 100%;
-    height: calc(100vh - 48px - 62px - 32px);
+    min-height: 100vh;
     background-color: var(--black);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: start;
     align-items: center;
+    color: var(--white);
+    padding: 20px 48px;
+}
+
+.heroText {
+    align-self: flex-start;
+}
+.cta-hero {
+    align-self: center;
+    margin-top: 100px;
+}
+
+.heroPictureContainer h1 {
+    font-size: 24px;
+    margin: 0;
+}
+.heroPictureContainer h2 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.heroPictureContainer h3 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+}
+
+.heroPictureContainer p {
+    font-size: 16px;
+}
+
+
+.hero-subtext {
+    display: none;
+}
+
+.cta-hero-down {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    .heroPictureContainer {
+        min-height: calc(100vh - 48px - 62px - 32px);
+        justify-content: center;
+    }
+    .heroPictureContainer h1 {
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .heroPictureContainer h2 {
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 400;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .heroPictureContainer h3 {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        padding: 0;
+        margin: 0;
+    }
+
+    .hero-subtext {
+        display: block;
+    }
+
+    .cta-hero-down {
+        display: block;
+    }
+
+    .cta-hero {
+        align-self: flex-start;
+        margin-top: 0;
+    }
+
+
 
 }
 
+
 .cta-button {
     padding: 8px 16px;
+    display: block;
     border: 1px solid var(--white);
     color: var(--white);
     text-decoration: none;
     font-weight: 600;
 }
 
+.cta-button-down {
+    padding: 5px;
+    display: block;
+    border: 1px solid var(--white);
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+}
 
 /* Main product styling */
 
