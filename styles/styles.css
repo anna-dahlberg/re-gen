@@ -69,7 +69,7 @@ body {
     align-items: center;
     height: 48px;
     padding:7px 20px;
-    background-color: var(--grey);
+    background-color: var(--beige);
 }
 
 .newsLetterText {
@@ -356,6 +356,7 @@ header {
 .heroText {
     align-self: flex-start;
 }
+
 .cta-hero {
     align-self: center;
     margin-top: 100px;
@@ -397,15 +398,16 @@ header {
         justify-content: center;
     }
     .heroPictureContainer h1 {
-        font-size: 30px;
         font-style: normal;
         font-weight: 400;
         padding: 0;
         margin: 0;
+        font-size: 48px;
+        line-height: 93.652%;
     }
     
     .heroPictureContainer h2 {
-        font-size: 60px;
+        font-size: 96px;
         font-style: normal;
         font-weight: 400;
         padding: 0;
@@ -413,7 +415,7 @@ header {
     }
     
     .heroPictureContainer h3 {
-        font-size: 20px;
+        font-size: 36px;
         font-style: normal;
         font-weight: 400;
         padding: 0;
@@ -422,6 +424,9 @@ header {
 
     .hero-subtext {
         display: block;
+        font-size: 20px !important;
+        padding-bottom: 38px;
+        
     }
 
     .cta-hero-down {
@@ -433,7 +438,10 @@ header {
         margin-top: 0;
     }
 
-
+    .cta-button {
+        font-size: 20px;
+        padding: 16px 24px !important;
+    }
 
 }
 
@@ -449,11 +457,15 @@ header {
 
 .cta-button-down {
     padding: 5px;
-    display: block;
-    border: 1px solid var(--white);
+    display: flex;
+    border: 2px solid var(--white);
     color: var(--white);
     text-decoration: none;
     font-weight: 600;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Main product styling */
@@ -528,7 +540,7 @@ header {
 
 #productCardHeaderContainer{
     display: flex;
-    width: 358px;
+    width: 100%;
     justify-content: space-between;
 }
 
@@ -536,33 +548,60 @@ header {
     border-radius: 20px 20px 0px 0px;
     border: 1px solid var(--black);
     display: flex;
-    width: 390px;
-    height: 878px;
-    padding: 24px 16px;
     flex-direction: column;
     align-items: flex-start;
-    gap: 4px;
-    flex-shrink: 0;
+    gap: 24px; /* Slightly larger gap for better spacing */
+    padding: 24px 16px;
+    width: 100vw;
+    max-width: 1512px;
+    margin: auto;
+    min-height: 878px;
+    max-height: 937px;
+}
+.productCardSectionArrow {
+    width: 32px;
+    height: 32px;
+    margin-top: 16.5px;
+}
+
+@media (min-width: 768px) {
+    .productCardSectionArrow {
+        width: 48px;
+        height: 48px;
+        margin-top: 30.5px;
+    }
 }
 
 .productCardSectionHeader h3 {
     font-weight: 300;
-    font-size: 16px;
+    font-size: clamp(16px, 5vw, 36px);
     margin: 0;
     padding: 0;
 }
 
 .productCardSectionHeader h2 {
-    font-size: 20px;
+    font-size: clamp(20px, 6vw, 48px);
     font-weight: 600;    
     margin: 0;
     padding: 0;
 }
 
 .productCard {
-    border: 1px solid var(--black);
-    width: 100%;
+    border: 1px solid var(--black); 
     padding: 8px;
+    width: clamp(358px, 20vw, 464px); /* Responsive scaling */
+    flex-grow: 1; /* Allow flexibility */
+    max-width: 464px; /* Prevent cards from becoming too large */
+    min-width: 358px; /* Ensure cards don’t shrink below mobile size */
+}
+
+.productCardContainer {
+    display: flex;
+    justify-content: center; /* Center cards */
+    flex-wrap: wrap; /* Allow wrapping */
+    gap: 16px;
+    width: 100%; /* Ensures container spans the full width */
+    max-width: 1512px; /* Optional: Limit the overall container width */
 }
 
 .productCardImage {
@@ -649,7 +688,7 @@ header {
 .reUseContainer p {
     padding: 0;
     margin: 0;
-    
+
 }
 
 .reUseLogo {
@@ -763,7 +802,7 @@ header {
 /* Footer styling */
 
 footer {
-    background-color: #D9D9D9;
+    background-color: var(--beige);
     width: 100%;
     /*
     display: flex;

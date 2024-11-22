@@ -1,3 +1,4 @@
 - Göra px til rem i slutet
+- Newsletter text ändras i desktop
 
 - Lös "förbeställknapp" (kika med Smilla/Sofi)
