@@ -586,13 +586,36 @@ header {
     padding: 0;
 }
 
-.productCard {
+.productCardMobile {
     border: 1px solid var(--black); 
     padding: 8px;
     width: clamp(358px, 20vw, 464px); /* Responsive scaling */
     flex-grow: 1; /* Allow flexibility */
     max-width: 464px; /* Prevent cards from becoming too large */
     min-width: 358px; /* Ensure cards don’t shrink below mobile size */
+    height: 245px;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .productCardDesktop {
+        display: block;
+    }
+    .productCardMobile{
+        display: none;
+    }
+}
+
+.productCardDesktop {
+    width: 464px;
+    display: block;
+}
+.productImageDesktop  {
+    width: 464px;
+}
+#desktopProductInfoCard {
+    border: 1px solid var(--black);
+    padding: 24px;
 }
 
 .productCardContainer {
@@ -613,24 +636,32 @@ header {
 .productName {
     font-size: 20px;
     font-weight: 500;
+    margin: 8px;
 }
 
 .productButtonContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 8px;
 }
 
 /* Product gallery button styling */
 
 .moreInfoButton {
     border: 1px solid var(--black);
-    background-color: var(--white);
+    background-color: transparent;
     display: flex;
     padding: 8px 16px;
     justify-content: center;
     align-items: center;
     gap: 8px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.productCardTextContainer {
+    padding: 0 8px 8px 8px;
 }
 
 .preOrderButton {
@@ -644,6 +675,7 @@ header {
     align-items: center;
     gap: 10px;
     flex-shrink: 0;
+    border: none;
 }
 
 .preOrderButton:hover {
