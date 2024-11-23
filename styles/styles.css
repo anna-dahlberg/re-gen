@@ -210,6 +210,13 @@ header {
 }
 
 
+.navIcon {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
 .news-overlay {
     background-color: #36804F;
     display: flex;
@@ -283,6 +290,19 @@ header {
 
 .nav-overlay {
     background-color: var(--beige);
+}
+
+.close-news-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.close-menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
 }
 
 .top-overlay {
@@ -528,7 +548,11 @@ header {
 }
 
 .boldInfo {
-    font-weight: bold;
+    font-weight: 600;
+}
+
+#fontsize20px {
+    font-size: 20px;
 }
 
 #cloudContainer {
@@ -586,13 +610,39 @@ header {
     padding: 0;
 }
 
-.productCard {
+.productCardMobile {
     border: 1px solid var(--black); 
     padding: 8px;
     width: clamp(358px, 20vw, 464px); /* Responsive scaling */
     flex-grow: 1; /* Allow flexibility */
     max-width: 464px; /* Prevent cards from becoming too large */
     min-width: 358px; /* Ensure cards don’t shrink below mobile size */
+    height: 245px;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .productCardDesktop {
+        display: block;
+    }
+
+    .productCardMobile{
+        display: none;
+    }
+}
+
+.productCardDesktop {
+    width: 464px;
+    display: block;
+}
+
+.productImageDesktop  {
+    width: 464px;
+}
+
+#desktopProductInfoCard {
+    border: 1px solid var(--black);
+    padding: 24px;
 }
 
 .productCardContainer {
@@ -613,24 +663,32 @@ header {
 .productName {
     font-size: 20px;
     font-weight: 500;
+    margin: 8px;
 }
 
 .productButtonContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 8px;
 }
 
 /* Product gallery button styling */
 
 .moreInfoButton {
     border: 1px solid var(--black);
-    background-color: var(--white);
+    background-color: transparent;
     display: flex;
     padding: 8px 16px;
     justify-content: center;
     align-items: center;
     gap: 8px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.productCardTextContainer {
+    padding: 0 8px 8px 8px;
 }
 
 .preOrderButton {
@@ -644,6 +702,7 @@ header {
     align-items: center;
     gap: 10px;
     flex-shrink: 0;
+    border: none;
 }
 
 .preOrderButton:hover {
@@ -708,36 +767,12 @@ header {
 
 }
 
-@media (min-width: 1024px) {
-    .reUseSection {
-        justify-content: start;
-    }
-    .reUseContainer {
-        height: 100%;
-        justify-content: center;
-        flex-basis: 50%;
-        align-items: center;
-    }
-    .reUseContainer p {
-        max-width: 80%;
-    }
-}
-
 /* ReUse Styling */
-.community {
-    background: url("../assets/images/communityImage.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    
-}
-
 
 .communityTextContainer {
     color: var(--white);
+    background-color: var(--black);
     padding: 0 14px;
-    width: 80%;
-    margin: 0 auto;
 }
 
 .communityTextContainer h2 {
@@ -769,41 +804,14 @@ header {
     gap: 8px;
 }
 
-.communityButtonContainer {
-    /*
+.communityImageContainer {
     background: url(/assets/images/communityImage.jpeg) lightgray -100.5px -2.747px / 139.026% 101.256% no-repeat;
-    */
     height: 342px;
     display: flex;
     flex-direction: column;
     align-items: center;
    padding-top: 28px; 
 }
-
-
-@media (min-width: 1024px) {
-
-    .communityTextContainer h2,.communityTextContainer h2 strong {
-        font-size: 64px;
-    }
-
-    .communityTextContainer p {
-        font-size: 18px;
-    }
-
-    .community {
-        min-height: 100vh;
-    }
-    .innerTextContainer {
-        max-width: 600px;
-    }
-    
-
-    .communityButton {
-        display: none;
-    }
-}
-
 
 
 /* Footer styling - Desktop */

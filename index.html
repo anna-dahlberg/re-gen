@@ -18,9 +18,7 @@
             <div class="infoContent">
                 <div class="top-overlay">
                     <a href="" class="close-news-btn">Stäng
-                        <span class="nav-icon">
-                            <img src="assets/images/closeIcon.svg" alt="meny">
-                        </span>
+                        <img src="assets/images/closeIcon.svg" alt="meny">
                     </a>
                 </div>
                 <div class="infoContainer">
@@ -78,10 +76,10 @@
                         </span>
                         Min Profil</a></li>
                     <li><a href="#">
-                        <span class="nav-icon">
-                            <img src="assets/images/GlobeIcon.svg" alt="meny">
+                        <span class="nav-icon" class="navIcon" >
+                            <img src="assets/images/GlobeIcon.svg" alt="meny" id="globeIcon">
+                            Svenska
                         </span>
-                        Svenska
                     </a></li>
                     <li><a id="orderBtn" href="#">Förbeställ
                         <span class="nav-icon">
@@ -96,9 +94,7 @@
             <div class="nav-overlay">
                 <div class="top-overlay">
                     <a href="" class="close-menu-btn">Stäng
-                        <span class="nav-icon">
                             <img src="assets/images/closeIcon.svg" alt="meny">
-                        </span>
                     </a>
                 </div>
                 <div class="content-overlay">
@@ -135,16 +131,12 @@
                         </li>
                     </ul>
                     <div class="bottom-overlay">
-                        <a href="" class="language-button">
-                            <span class="nav-icon">
+                        <a href="" class="navIcon">
                                 <img src="assets/images/GlobeIcon.svg" alt="meny">
-                            </span>
                             Svenska
                         </a>
-                        <a href="" class="profile-button">
-                            <span class="nav-icon">
+                        <a href="" class="navIcon">
                                 <img src="assets/images/userIcon.svg" alt="varukorg">
-                            </span>
                             Min profil
                         </a>
                     </div>
@@ -243,35 +235,101 @@
 
             <div class="productCardContainer">
                 
-                <div class="productCard">
+                <div class="productCardMobile">
                     <img src="" alt="" class="productCardImage">
-                    <p class="productName">Produktnamn</p>
-                    <div class="productButtonContainer">
-                        <button class="moreInfoButton">Mer info<img src="/assets/images/chevron-down.svg" alt=""></button>
-                        <button class="preOrderButton">Förbeställ<img src="/assets/images/CartIconWhite.svg" alt=""></button>
+                    <div class="productCardTextContainer">
+                        <p class="productName">Produktnamn</p>
+                        <div class="productButtonContainer">
+                            <button class="moreInfoButton">Mer info<img src="/assets/images/chevron-down.svg" alt=""></button>
+                            <button class="preOrderButton">Förbeställ<img src="/assets/images/CartIconWhite.svg" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="productCardMobile">
+                    <img src="" alt="" class="productCardImage">
+                    <div class="productCardTextContainer">
+                        <p class="productName">Produktnamn</p>
+                        <div class="productButtonContainer">
+                            <button class="moreInfoButton">Mer info<img src="/assets/images/chevron-down.svg" alt=""></button>
+                            <button class="preOrderButton">Förbeställ<img src="/assets/images/CartIconWhite.svg" alt=""></button>
+                        </div>
                     </div>
                 </div>
     
-                <div class="productCard">
+                <div class="productCardMobile">
                     <img src="" alt="" class="productCardImage">
-                    <p class="productName">Produktnamn</p>
-                    <div class="productButtonContainer">
-                        <button class="moreInfoButton">Mer info<img src="/assets/images/chevron-down.svg" alt=""></button>
-                        <button class="preOrderButton">Förbeställ<img src="/assets/images/CartIconWhite.svg" alt=""></button>
+                    <div class="productCardTextContainer">
+                        <p class="productName">Produktnamn</p>
+                        <div class="productButtonContainer">
+                            <button class="moreInfoButton">Mer info<img src="/assets/images/chevron-down.svg" alt=""></button>
+                            <button class="preOrderButton">Förbeställ<img src="/assets/images/CartIconWhite.svg" alt=""></button>
+                        </div>
                     </div>
                 </div>
-    
-                <div class="productCard">
-                    <img src="" alt="" class="productCardImage">
-                    <p class="productName">Produktnamn</p>
-                    <div class="productButtonContainer">
-                        <button class="moreInfoButton">Mer info<img src="/assets/images/chevron-down.svg" alt=""></button>
-                        <button class="preOrderButton">Förbeställ<img src="/assets/images/CartIconWhite.svg" alt=""></button>
+
+                <div class="productCardDesktop">
+                    <img src="/assets/images/watchBlack.png" alt="wacth black" class="productImageDesktop">
+                    <div id="desktopProductInfoCard">
+                        <div class="productInfoContainer">
+                            <span class="boldInfo"  id="fontsize20px">Produktnamn</span>
+                            <span class="boldInfo"  id="fontsize20px">Färgnamn</span>
+                            <span class="boldInfo"  id="fontsize20px">Material</span>
+                            <span  id="fontsize20px">Återvunnen plast, aluminium</span>
+                            <span class="boldInfo"  id="fontsize20px">Klimatpåverkan</span>
+                            <span id="cloudContainer">
+                                <img src="/assets/images/cloud.svg" alt="cloud">3.2kg 
+                                <img src="/assets/images/droplet.svg" alt="">4 liter
+                            </span> 
+                        </div>
+                        <div class="productButtonContainer">
+                            <button class="preOrderButton">Förbeställ<img src="/assets/images/CartIconWhite.svg" alt=""></button>
+                            <button class="moreInfoButton">Mer info<img src="/assets/images/chevron-down.svg" alt=""></button>
+                        </div>
                     </div>
                 </div>
-            </div>
 
+                <div class="productCardDesktop">
+                    <img src="/assets/images/powerbank.png" alt="wacth black" class="productImageDesktop">
+                    <div id="desktopProductInfoCard">
+                        <div class="productInfoContainer">
+                            <span class="boldInfo"  id="fontsize20px">Produktnamn</span>
+                            <span class="boldInfo"  id="fontsize20px">Färgnamn</span>
+                            <span class="boldInfo"  id="fontsize20px">Material</span>
+                            <span  id="fontsize20px">Återvunnen plast, aluminium</span>
+                            <span class="boldInfo"  id="fontsize20px">Klimatpåverkan</span>
+                            <span id="cloudContainer">
+                                <img src="/assets/images/cloud.svg" alt="cloud">3.2kg 
+                                <img src="/assets/images/droplet.svg" alt="">4 liter
+                            </span> 
+                        </div>
+                        <div class="productButtonContainer">
+                            <button class="preOrderButton">Förbeställ<img src="/assets/images/CartIconWhite.svg" alt=""></button>
+                            <button class="moreInfoButton">Mer info<img src="/assets/images/chevron-down.svg" alt=""></button>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="productCardDesktop">
+                    <img src="/assets/images/keyring.png" alt="wacth black" class="productImageDesktop">
+                    <div id="desktopProductInfoCard">
+                        <div class="productInfoContainer">
+                            <span class="boldInfo"  id="fontsize20px">Produktnamn</span>
+                            <span class="boldInfo"  id="fontsize20px">Färgnamn</span>
+                            <span class="boldInfo"  id="fontsize20px">Material</span>
+                            <span  id="fontsize20px">Återvunnen plast, aluminium</span>
+                            <span class="boldInfo"  id="fontsize20px">Klimatpåverkan</span>
+                            <span id="cloudContainer">
+                                <img src="/assets/images/cloud.svg" alt="cloud">3.2kg 
+                                <img src="/assets/images/droplet.svg" alt="">4 liter
+                            </span> 
+                        </div>
+                        <div class="productButtonContainer">
+                            <button class="preOrderButton">Förbeställ<img src="/assets/images/CartIconWhite.svg" alt=""></button>
+                            <button class="moreInfoButton">Mer info<img src="/assets/images/chevron-down.svg" alt=""></button>
+                        </div>
+                    </div>
+                </div>
 
         </section>
 
