@@ -708,6 +708,21 @@ header {
 
 }
 
+@media (min-width: 1024px) {
+    .reUseSection {
+        justify-content: start;
+    }
+    .reUseContainer {
+        height: 100%;
+        justify-content: center;
+        flex-basis: 50%;
+        align-items: center;
+    }
+    .reUseContainer p {
+        max-width: 80%;
+    }
+}
+
 /* ReUse Styling */
 .community {
     background: url("../assets/images/communityImage.jpeg");
