@@ -471,13 +471,15 @@ header {
 /* Main product styling */
 
 .mainProduct {
-    display: flex;
-    width: 100%;
     padding: 16px;
+}
+
+
+.productContainer {
+    display: flex;
+    gap: 8px;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
-    margin: 16px 0;
+    align-items: center;
 }
 
 .productHeader {
@@ -494,14 +496,6 @@ header {
     font-size: 20px;
     font-weight: 300;
     margin: 0;
-}
-
-.productContainer {
-    width: 100%;
-    gap: 8px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .productImgContainer {
