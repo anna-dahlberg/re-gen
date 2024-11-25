@@ -222,6 +222,7 @@ header {
     display: flex;
     flex-direction: row;
     min-height: 100vh;
+    
 }
 
 
@@ -349,6 +350,7 @@ header {
     display: flex;
     align-items: center;
     gap: 8px;
+    justify-content: flex-end;
 }
 .close-menu-btn {
     display: flex;
