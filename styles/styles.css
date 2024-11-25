@@ -70,7 +70,8 @@ body {
     align-items: center;
     height: 48px;
     padding:7px 20px;
-    background-color: var(--beige);
+    background-color: var(--blue);
+    color: var(--white);
 }
 
 .newsLetterText {
@@ -86,7 +87,7 @@ body {
 .newsLetter p a {
     font-size: 12px;
     text-decoration: none;
-    color: var(--black);
+    color: var(--white);
     font-weight: bold;
 }
 
@@ -96,7 +97,7 @@ body {
 
 
 header {
-    background-color: var(--white);
+    background-color: var(--beige);
 }
 .nav-desktop {
     display: none;
@@ -169,7 +170,7 @@ header {
     .logo-container {
         height: 62px;
         width: 100%;
-        background-color: var(--white);
+        background-color: var(--beige);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -364,7 +365,7 @@ header {
 /* Hero styling */
 .heroPictureContainer {
     width: 100%;
-    min-height: 100vh;
+    min-height: 668px;
     background-color: var(--black);
     display: flex;
     flex-direction: column;
@@ -374,28 +375,36 @@ header {
     padding: 20px 48px;
 }
 
-.heroText {
-    align-self: flex-start;
+.launchDate  {
+   font-size: 16px;
+   text-align: center;
+   font-weight: 600;
+   margin-top: 6px;
+}
+
+.capitalized {
+    text-transform: uppercase;
 }
 
 .cta-hero {
     align-self: center;
-    margin-top: 100px;
+    margin-top: 24px;
 }
 
-.heroPictureContainer h1 {
-    font-size: 24px;
-    margin: 0;
+.heroText {
+    padding-top: 384px;
 }
+
 .heroPictureContainer h2 {
-    font-size: 30px;
+    font-size: 24px;
+    font-weight: 400;
     margin: 0;
 }
 
 .heroPictureContainer h3 {
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 600;
     padding: 0;
     margin: 0;
 }
@@ -474,6 +483,7 @@ header {
     color: var(--white);
     text-decoration: none;
     font-weight: 600;
+    font-size: 20px;
 }
 
 .cta-button-down {
@@ -492,12 +502,26 @@ header {
 /* Main product styling */
 
 .mainProduct {
-    padding: 100px 16px;
+    padding: 16px;
 }
 
 #mainProductImage {
     transition: opacity 0.9s ease; 
     opacity: 1;
+}
+
+.mainProductReGen {
+    font-weight: 600;
+}
+
+.yourWay {
+    margin: 0;
+    font-size: 30px;
+}
+
+#techWatch {
+    font-size: 20px;
+    margin-top: 16px;
 }
 
 .productContainer {
@@ -533,7 +557,7 @@ header {
 }
 
 .productImage img {
-    width: 300px;
+    width: 358px;
 }
 
 .configurationBar {
@@ -555,6 +579,8 @@ header {
     flex-direction: column;
     gap: 8px;
     width: 100%;
+    border: 1px solid var(--black);
+    padding: 16px;
 }
 .productHeaderDesktop {
     display: none;
@@ -719,7 +745,6 @@ header {
 .productCardImage {
     height: 131px;
     width: 100%;
-    background-color: #36804F; /* För test */
 }
 
 .productName {
@@ -795,28 +820,19 @@ header {
     color: var(--white);
     border-radius: 42px;
     background-color: var(--blue);
-    backdrop-filter: blur(31.75px);
     padding: 0 24px;
     display: inline-flex;
-    height: 37px;
+    height: 42px;
     align-items: center;
     gap: 10px;
-    flex-shrink: 0;
     border: none;
+    width: 147px;
 }
 
 .preOrderButton:hover {
-    color: var(--white);
-    border-radius: 42px;
-    background-color: var(--black);
-    backdrop-filter: blur(31.75px);
-    padding: 0 24px;
-    display: inline-flex;
-    height: 37px;
-    align-items: center;
-    gap: 10px;
-    flex-shrink: 0;
-    font-size: 20px;
+    color: var(--blue);
+    background-color: var(--white);
+    border: 1px solid var(--blue);
 }
 
 /* ReUse Section Styling */
@@ -1025,12 +1041,18 @@ header {
 footer {
     background-color: var(--beige);
     width: 100%;
-    /*
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    */
     padding: 50px 48px;
+}
+
+@media (min-width: 768px) {
+    footer {
+        display: block; /* Reset layout */
+        justify-content: unset; /* Remove centering */
+        align-items: unset; /* Remove centering */
+    }
 }
 
 .mobileFooterContainer {
