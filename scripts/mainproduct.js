@@ -1,7 +1,7 @@
 const productsImgs =[
-    "assets/images/keyring.png",
     "assets/images/watchBlack.png",
     "assets/images/powerbank.png",
+    "assets/images/keyring.png",
 ];
 
 const arrowImgs = {
@@ -12,9 +12,9 @@ const arrowImgs = {
 };
 
 const buttonImgs = {
-    "green": [
-        "/assets/images/buttonGreenSmall.svg",
-        "/assets/images/buttonGreenBig.svg"
+    "black": [
+        "/assets/images/buttonBlackSmall.svg",
+        "/assets/images/buttonBlackBig.svg"
     ],
     "orange": [
         "/assets/images/buttonOrangeSmall.svg",
@@ -38,7 +38,7 @@ let rightArrowImg = document.getElementById("rightArrowImg");
 mainProductImage.src = productsImgs[start_index];
 
 
-let btnGreen = document.querySelector(".buttonGreen");
+let btnBlack = document.querySelector(".buttonBlack");
 let btnOrange = document.querySelector(".buttonOrange");
 let btnLilac = document.querySelector(".buttonLilac");
 
@@ -59,15 +59,15 @@ function updateImage(index) {
 
 function updateButtons(index) {
     if(index == 0) {
-        btnGreen.src = "/assets/images/buttonGreenBig.svg";
+        btnBlack.src = "/assets/images/buttonBlackBig.svg";
         btnOrange.src = "/assets/images/buttonOrangeSmall.svg";
         btnLilac.src = "assets/images/buttonLilacSmall.svg";
     } else if(index == 1) {
-        btnGreen.src = "/assets/images/buttonGreenSmall.svg";
+        btnBlack.src = "/assets/images/buttonBlackSmall.svg";
         btnOrange.src = "/assets/images/buttonOrangeBig.svg";
         btnLilac.src = "assets/images/buttonLilacSmall.svg";
     } else if(index == 2) {
-        btnGreen.src = "/assets/images/buttonGreenSmall.svg";
+        btnBlack.src = "/assets/images/buttonBlackSmall.svg";
         btnOrange.src = "/assets/images/buttonOrangeSmall.svg";
         btnLilac.src = "assets/images/buttonLilacBig.svg";
     }
