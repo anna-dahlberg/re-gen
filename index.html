@@ -277,7 +277,15 @@
 
         <!-- Desktop Product Cards -->
         <div class="productCardDesktop">
-            <img src="/assets/images/watchBlack.png" alt="watch black" class="productImageDesktop">
+
+            <div class="hoverVideoContainer">
+                <img src="/assets/images/watchBlack.png" alt="watch black" class="productImageDesktop" class="hoverImage">
+                <video class="hover-video" muted loop>
+                    <source src="/assets/videos/watch.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
             <div id="desktopProductInfoCard">
                 <div class="productInfoContainer">
                     <span class="boldInfo" id="fontsize24px">Produktnamn</span>
@@ -298,7 +306,15 @@
         </div>
 
         <div class="productCardDesktop">
-            <img src="/assets/images/powerbank.png" alt="watch black" class="productImageDesktop">
+
+            <div class="hoverVideoContainer">
+                <img src="/assets/images/powerbank.png" alt="powerbank" class="productImageDesktop" class="hoverImage">
+                <video class="hover-video" muted loop>
+                    <source src="/assets/videos/powerbank.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
             <div id="desktopProductInfoCard">
                 <div class="productInfoContainer">
                     <span class="boldInfo" id="fontsize24px">Produktnamn</span>
@@ -319,7 +335,15 @@
         </div>
 
         <div class="productCardDesktop">
-            <img src="/assets/images/keyring.png" alt="watch black" class="productImageDesktop">
+
+            <div class="hoverVideoContainer">
+                <img src="/assets/images/keyring.png" alt="keyring" class="productImageDesktop" class="hoverImage">
+                <video class="hover-video" muted loop>
+                    <source src="/assets/videos/keyring.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
             <div id="desktopProductInfoCard">
                 <div class="productInfoContainer">
                     <span class="boldInfo" id="fontsize24px">Produktnamn</span>
@@ -471,5 +495,6 @@
     </footer>
     <script src="scripts/menu.js"></script> <!-- För responsiv meny-->
     <script src="scripts/mainproduct.js"></script>
+    <script src="/scripts/hovervideo.js"></script> <!--For video hover effect-->
 </body>
 </html>

@@ -598,6 +598,7 @@ header {
 }
 
 
+/* Product card styling */
 .boldInfo {
     font-weight: 600;
 }
@@ -629,7 +630,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 24px; /* Slightly larger gap for better spacing */
+    gap: 24px; 
     padding: 24px 16px;
     width: 100vw;
     max-width: 1512px;
@@ -673,19 +674,29 @@ header {
     max-width: 464px; /* Prevent cards from becoming too large */
     min-width: 358px; /* Ensure cards don’t shrink below mobile size */
     height: 245px;
-    display: block; /* Visible on mobile */
+    display: block; 
+    
 }
+
 
 @media (min-width: 768px) {
     .productCardMobile {
-        display: none; /* Hide on desktop */
+        display: none; 
     }
 }
 
 .productCardDesktop {
     width: 464px;
-    display: block;
+    display: none;
 }
+
+@media (min-width: 768px) {
+    .productCardDesktop {
+        display: block; 
+    }
+}
+
+
 .productImageDesktop  {
     width: 464px;
 }
@@ -694,7 +705,6 @@ header {
     padding: 24px;
 }
 
-/* General Product Gallery Styling */
 .productCardContainer {
     display: flex;
     justify-content: center; /* Center cards */
@@ -721,6 +731,44 @@ header {
     justify-content: space-between;
     align-items: center;
     padding-top: 8px;
+}
+
+/* Hover video styling */
+
+
+.hoverVideoContainer {
+    position: relative;
+    width: 464px;
+    overflow: hidden;
+}
+
+.hoverImage,
+.hover-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure both image and video cover the container */
+    transition: opacity 0.3s ease-in-out; /* Smooth fade effect */
+}
+
+.hoverImage {
+    opacity: 1; /* Show the image by default */
+    z-index: 1; /* Place image on top */
+}
+
+.hover-video {
+    opacity: 0; /* Hide the video by default */
+    z-index: 0; /* Place video below image */
+}
+
+.hoverVideoContainer:hover .hoverImage {
+    opacity: 0; /* Hide the image when hovering */
+}
+
+.hoverVideoContainer:hover .hover-video {
+    opacity: 1; /* Show the video when hovering */
 }
 
 /* Product gallery button styling */
@@ -1055,3 +1103,4 @@ footer {
     display: flex;
     justify-content: space-between;
 }
+
