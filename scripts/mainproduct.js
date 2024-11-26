@@ -1,7 +1,7 @@
 const productsImgs =[
     "assets/images/watchBlack.png",
-    "assets/images/powerbank.png",
-    "assets/images/keyring.png",
+    "assets/images/watchOrange.png",
+    "assets/images/watchLilac.png",
 ];
 
 const arrowImgs = {
