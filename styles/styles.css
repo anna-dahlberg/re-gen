@@ -234,10 +234,9 @@ header {
 
 
 .news-overlay {
-    background-color: #36804F;
     display: flex;
     flex-direction: row;
-    min-height: 100vh;
+    min-height: 724px;
     
 }
 
@@ -245,10 +244,13 @@ header {
 .infoContent {
     flex-basis: 100%;
     background-color: var(--beige);
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
 }
 
 .newsHero {
-    background-color: #A05E2B;
+    background-image: url(/assets/images/newsletterImage.png);
     display: none;
 }
 
@@ -273,11 +275,14 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 36px;
 }
 
 .infoContainer h2 {
     font-size: 20px;
     font-weight: 600;
+    margin: 0;
+    padding-bottom: 42;
 }
 
 .infoContainer form div {
@@ -288,15 +293,50 @@ header {
 .infoContainer input {
     border: 1px solid var(--black);
     border-right: 0px;
+    
 }
 
-.infoContainer button {
-    padding: 5px 10px;
-    border-radius: 0;
-    background-color: var(--black);
-    color: var(--white);
-    border: 1px solid var(--black);
+.emailInputContainer {
+    margin-top: 37px;
 }
+
+.emailInput {
+    height: 41px;
+    width: 221px;
+    padding: 5px 10px;
+}
+
+.emailInputButton {
+    width: 77px;
+    text-transform: uppercase;
+    color: var(--white);
+    background-color: var(--blue);
+    border: none;
+}
+
+.emailTerms {
+    height: 41px;
+    width: 310px;
+    padding-top: 37px;
+}
+
+
+.emailTerms input[type="checkbox"] {
+    appearance: none;          /* For modern browsers */
+    width: 25px;
+    height: 25px;
+    border-radius: 0; 
+    border: 1px solid #333; 
+    background-color: #fff; 
+}
+
+.emailTerms span {
+    padding-left: 24px;
+}
+
+
+
+
 
 .nav-overlay ul li{
     list-style: none;

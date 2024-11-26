@@ -1,11 +1,8 @@
-
 - Main product bilder nya (ligger i assets) //Jonatan
 
 - Lägg till hero-animation //Jonatan
 
 - Ändra text och knapppositionering hero - desktop //Jonatan
-
-- Newsletter positionering och bild för desktop och mobil //Anna
 
 - Byt ut små bilder till mer högupplösta //Anna
 
@@ -14,6 +11,8 @@
 - Main product desktop design och positionering //Anna
 
 Optional:
+
+- Försök fixa Newsletter positionering mer
 
 - Göra px til rem i slutet ?
 
