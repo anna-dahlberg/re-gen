@@ -7,6 +7,10 @@
 
 - Lägg till hero-animation //Jonatan
 
+- Ändra text och knapppositionering hero - desktop //Jonatan
+
+- Newsletter positionering och bild för desktop och mobil //Anna
+
 - Ändra knappdesign på desktop nav //Anna
 
 - Byt ut små bilder till mer högupplösta //Anna
