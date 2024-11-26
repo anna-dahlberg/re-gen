@@ -908,7 +908,7 @@ header {
 
 .preOrderButton:hover {
     color: var(--blue);
-    background-color: var(--white);
+    background-color: var(--beige);
     border: 1px solid var(--blue);
 }
 
