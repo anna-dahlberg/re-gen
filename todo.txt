@@ -4,6 +4,8 @@
 
 - Ändra text och knapppositionering hero - desktop //Jonatan
 
+- Ändra så färgnamnet ändras när man byter produktfärg på main product
+
 - Fixa position på communityButton för Desktop //Jonatan
 
 - Lös mer info knapp för mobil och desktop //Anna
