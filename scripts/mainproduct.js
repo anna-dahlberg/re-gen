@@ -1,7 +1,7 @@
 const productsImgs =[
     "assets/images/watchBlack.png",
-    "assets/images/powerbank.png",
-    "assets/images/keyring.png",
+    "assets/images/watchOrange.png",
+    "assets/images/watchLilac.png",
 ];
 
 const arrowImgs = {
@@ -26,6 +26,11 @@ const buttonImgs = {
     ]
 }
 
+const typeTexts = {
+    "black": "Natt",
+    "orange": "Soluppgång",
+    "lilac": "Solnedgång"
+}
 
 let start_index = 0;
 
@@ -41,6 +46,9 @@ mainProductImage.src = productsImgs[start_index];
 let btnBlack = document.querySelector(".buttonBlack");
 let btnOrange = document.querySelector(".buttonOrange");
 let btnLilac = document.querySelector(".buttonLilac");
+
+let productText = document.getElementById("productTypeText");
+
 
 
 function updateImage(index) {
@@ -62,14 +70,17 @@ function updateButtons(index) {
         btnBlack.src = "/assets/images/buttonBlackBig.svg";
         btnOrange.src = "/assets/images/buttonOrangeSmall.svg";
         btnLilac.src = "assets/images/buttonLilacSmall.svg";
+        productText.innerHTML = typeTexts.black;
     } else if(index == 1) {
         btnBlack.src = "/assets/images/buttonBlackSmall.svg";
         btnOrange.src = "/assets/images/buttonOrangeBig.svg";
         btnLilac.src = "assets/images/buttonLilacSmall.svg";
+        productText.innerHTML = typeTexts.orange;
     } else if(index == 2) {
         btnBlack.src = "/assets/images/buttonBlackSmall.svg";
         btnOrange.src = "/assets/images/buttonOrangeSmall.svg";
         btnLilac.src = "assets/images/buttonLilacBig.svg";
+        productText.innerHTML = typeTexts.lilac;
     }
 }
 

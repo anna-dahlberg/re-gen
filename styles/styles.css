@@ -224,6 +224,7 @@ header {
     width: 100%;
     transform: translateY(-100%);
     transition: transform 0.3s ease-in-out;
+    z-index: 2;
 }
 
 .navIcon {
@@ -415,40 +416,61 @@ header {
     gap: 8px;
 }
 
+.hero {
+    position: relative;
+}
+
 
 
 /* Hero styling */
 .heroPictureContainer {
     width: 100%;
-    min-height: 668px;
     background-color: var(--black);
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     color: var(--white);
     padding: 20px 48px;
 }
 
+
+#heroVideo {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
 .launchDate  {
-   font-size: 16px;
-   text-align: center;
-   font-weight: 600;
-   margin-top: 6px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 6px;
+    z-index: 1;
+    order: 1;
+    align-self: center;
 }
 
 .capitalized {
     text-transform: uppercase;
 }
 
+.heroText {
+    z-index: 1;
+    padding-top: 384px;
+    order: 2;
+}
+
 .cta-hero {
     align-self: center;
     margin-top: 24px;
+    z-index: 1;
+    display: inline-block;
+    order: 3;
 }
 
-.heroText {
-    padding-top: 384px;
-}
 
 .heroPictureContainer h2 {
     font-size: 24px;
@@ -468,7 +490,6 @@ header {
     font-size: 16px;
 }
 
-
 .hero-subtext {
     display: none;
 }
@@ -479,8 +500,8 @@ header {
 
 @media (min-width: 1024px) {
     .heroPictureContainer {
-        min-height: calc(100vh - 48px - 62px - 32px);
-        justify-content: center;
+        align-items: start;
+        min-height: 100vh;
     }
     .heroPictureContainer h1 {
         font-style: normal;
@@ -492,7 +513,7 @@ header {
     }
     
     .heroPictureContainer h2 {
-        font-size: 96px;
+        font-size: 42px;
         font-style: normal;
         font-weight: 400;
         padding: 0;
@@ -500,7 +521,7 @@ header {
     }
     
     .heroPictureContainer h3 {
-        font-size: 36px;
+        font-size: 48px;
         font-style: normal;
         font-weight: 400;
         padding: 0;
@@ -514,6 +535,12 @@ header {
         
     }
 
+    .heroText {
+        z-index: 1;
+        padding-top: 0;
+        order: 2;
+    }
+
     .cta-hero-down {
         display: block;
     }
@@ -521,6 +548,7 @@ header {
     .cta-hero {
         align-self: flex-start;
         margin-top: 0;
+        order: 2;
     }
 
     .cta-button {
@@ -528,6 +556,12 @@ header {
         padding: 16px 24px !important;
     }
 
+
+    .launchDate  {
+        position: absolute;
+        bottom: 20px;
+        order: 3;
+    }
 }
 
 
@@ -978,6 +1012,7 @@ header {
     align-items: center;
     position: relative;
 }
+
 
 #metalvideo {
     position: absolute;
