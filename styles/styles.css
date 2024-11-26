@@ -91,6 +91,20 @@ body {
     font-weight: bold;
 }
 
+@media (min-width: 1024px) {
+    .newsLetterText {
+        font-size: 14px;
+    }
+
+    .newsLetter p strong, .newsLetter p span {
+        font-size: 14px;
+    }
+
+    .newsLetter p a {
+        font-size: 14px;
+    }
+}
+
 .lineBreak {
     display: block;
 }
@@ -107,6 +121,7 @@ header {
     list-style: none;
     padding: 0;
     display: flex;
+    align-items: center;
 }
 
 .navIcons {
@@ -125,16 +140,9 @@ header {
     gap: 24px;
 }
 
-#orderBtn {
-    text-decoration: none;
-    padding: 10px 24px;
-    border-radius: 42px;
-    color: var(--white);
-    background-color: var(--black);
-}
 
+/*Mobile navbar*/
 
-/*mobile navbar*/
 .navbar {
     display: flex;
     flex-direction: row;
@@ -178,8 +186,15 @@ header {
 }
 
 .logo-header {
-    width: 40px;
-    height: 40px;
+    width: 48px;
+    height: 48px;
+}
+
+@media (max-width: 1024px) { /* Adjust breakpoint as needed */
+    .logo-header {
+        width: 40px;
+        height: 40px;
+    }
 }
 
 
@@ -838,12 +853,27 @@ header {
     gap: 10px;
     border: none;
     width: 147px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+
+.cartIcon {
+    width: 17px; 
+    height: 16px;
+    fill: currentColor; 
+    transition: fill 0.3s ease; 
+}
+
 
 .preOrderButton:hover {
     color: var(--blue);
     background-color: var(--white);
     border: 1px solid var(--blue);
+}
+
+.preOrderButton:hover .cartIcon {
+    fill: var(--blue);
 }
 
 /* ReUse Section Styling */

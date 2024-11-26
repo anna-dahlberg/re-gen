@@ -1,17 +1,11 @@
 
-- Newsletter text ändras i desktop till större 12 -> 14px //Jonatan
-
 - Main product bilder nya (ligger i assets) //Jonatan
-
-- Lägg till blå shoppingcartikon //Jonatan
 
 - Lägg till hero-animation //Jonatan
 
 - Ändra text och knapppositionering hero - desktop //Jonatan
 
 - Newsletter positionering och bild för desktop och mobil //Anna
-
-- Ändra knappdesign på desktop nav //Anna
 
 - Byt ut små bilder till mer högupplösta //Anna
 
