@@ -1,3 +1,22 @@
-- Göra px til rem i slutet
-- Newsletter text ändras i desktop
+- Göra px til rem i slutet ?
 
+- Newsletter text ändras i desktop till större
+
+- Ändra knappdesign på desktop nav
+
+- Byt ut små bilder till mer högupplösta
+
+- Lös mer info knapp för mobil och desktop
+
+- Ikoner ska ändras på configurationbar när man byter produkt, 
+och helst ska vänstra pilen bli svart efter första högerklicket och högra pilen bli grå vid andra högerklicket
+
+- Main product desktop design och positionering
+
+- Main product bilder nya (ligger i assets)
+
+- Lägg till blå shoppingcartikon
+
+- (Lägg till Clicked button version)
+
+- Lägg till hero-animation
