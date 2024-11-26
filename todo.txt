@@ -1,22 +1,22 @@
+
+- Newsletter text ändras i desktop till större 12 -> 14px //Jonatan
+
+- Main product bilder nya (ligger i assets) //Jonatan
+
+- Lägg till blå shoppingcartikon //Jonatan
+
+- Lägg till hero-animation //Jonatan
+
+- Ändra knappdesign på desktop nav //Anna
+
+- Byt ut små bilder till mer högupplösta //Anna
+
+- Lös mer info knapp för mobil och desktop //Anna
+
+- Main product desktop design och positionering //Anna
+
+Optional:
+
 - Göra px til rem i slutet ?
 
-- Newsletter text ändras i desktop till större
-
-- Ändra knappdesign på desktop nav
-
-- Byt ut små bilder till mer högupplösta
-
-- Lös mer info knapp för mobil och desktop
-
-- Ikoner ska ändras på configurationbar när man byter produkt, 
-och helst ska vänstra pilen bli svart efter första högerklicket och högra pilen bli grå vid andra högerklicket
-
-- Main product desktop design och positionering
-
-- Main product bilder nya (ligger i assets)
-
-- Lägg till blå shoppingcartikon
-
-- (Lägg till Clicked button version)
-
-- Lägg till hero-animation
+- (Lägg till Clicked button version) 
