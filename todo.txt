@@ -4,8 +4,6 @@
 
 - Ändra text och knapppositionering hero - desktop //Jonatan
 
-- Byt ut små bilder till mer högupplösta //Anna
-
 - Lös mer info knapp för mobil och desktop //Anna
 
 - Main product desktop design och positionering //Anna
