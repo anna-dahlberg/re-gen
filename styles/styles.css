@@ -1019,10 +1019,6 @@ header {
     font-size: 32px;
 }
 
-.communityTextContainer p {
-    line-height: 150%;
-    margin: 0;
-}
 
 .communityButton {
     font-size: 20px;
@@ -1056,20 +1052,17 @@ header {
     }
 
     .communityTextContainer p {
-        font-size: 18px;
+        font-size: 24px;
+        line-height: 150%;
     }
 
     .community {
         min-height: 100vh;
     }
     .innerTextContainer {
-        max-width: 600px;
+        max-width: 570px;
     }
     
-
-    .communityButton {
-        display: none;
-    }
 }
 
 
