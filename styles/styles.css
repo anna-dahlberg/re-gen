@@ -636,8 +636,10 @@ header {
 }
 
 #techWatch {
+    font-weight: 500;
     font-size: 20px;
     margin-top: 16px;
+   
 }
 
 .productContainer {
@@ -696,13 +698,35 @@ header {
     gap: 8px;
     width: 100%;
     padding: 16px;
-    margin-top: 16px;
+    border: 1px solid var(--black);
+    margin-top: 15px;
 }
 .productHeaderDesktop {
     display: none;
 }
 
+.productHeaderDesktop h3, .productHeaderDesktop h3 strong {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.productHeaderDesktop h3 strong {
+    font-weight: bold;
+}
+
+
 @media (min-width: 1024px) {
+    .mainProduct {
+        margin: 100px 0;
+    }
+    .productHeaderDesktop h3, .productHeaderDesktop h3 strong {
+        font-size: 28px;
+        font-weight: 400;
+    }
+    .productHeaderDesktop h3 strong {
+        font-weight: bold;
+    }
+    
     .productContainer {
         flex-direction: row;
         flex-wrap: wrap;
@@ -723,7 +747,9 @@ header {
     .productInfoContainer {
         flex-basis: 45%;
         padding: 0 10px;
-        height: 200px;
+        height: 400px;
+        margin-top: 0;
+        padding: 20px;
     }
 
     .productHeader {
