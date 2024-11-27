@@ -865,6 +865,12 @@ header {
     object-fit: cover;
 }
 
+#dropdownImage {
+    display: none;
+}
+
+
+
 .productName {
     font-size: 20px;
     font-weight: 500;

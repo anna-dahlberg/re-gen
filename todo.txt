@@ -1,11 +1,15 @@
+-- Jonatan --
 
-- Ändra så färgnamnet ändras när man byter produktfärg på main product //Jonatan
-
-- Lös mer info knapp desktop //Anna
+- Ändra så färgnamnet ändras när man byter produktfärg på main product 
 
 - Main product desktop design och positionering 
 
 - Text-positionering Community Mobile
+
+-- Anna --
+
+- Lös mer info knapp desktop //Anna
+
 
 Optional:
 

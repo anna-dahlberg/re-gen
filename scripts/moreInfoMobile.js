@@ -1,10 +1,10 @@
 document.querySelectorAll('.moreInfoButton').forEach(button => {
     button.addEventListener('click', () => {
-        const container = button.closest('.productCardTextContainer');  // Get the closest card container
-        const dropdown = container.querySelector('.dropdownContent');  // The dropdown content
-        const buttonContainer = container.querySelector('.productButtonContainer');  // The button container
-        const sectionArrow = document.querySelector('.productCardSectionArrow');  // The arrow image in the header
-        const closeMoreInfoButton = document.querySelector('.closeMoreInfo');  // The "Close More Info" button in the header
+        const container = button.closest('.productCardTextContainer'); // Get the closest card container
+        const dropdown = container.querySelector('.dropdownContent'); // The dropdown content
+        const buttonContainer = container.querySelector('.productButtonContainer'); // The button container
+        const sectionArrow = document.querySelector('.productCardSectionArrow'); // The arrow image in the header
+        const closeMoreInfoButton = document.querySelector('.closeMoreInfo'); // The "Close More Info" button in the header
 
         // Show the dropdown content
         dropdown.classList.add('active');
@@ -21,6 +21,18 @@ document.querySelectorAll('.moreInfoButton').forEach(button => {
         // Adjust button container layout
         buttonContainer.style.flexDirection = 'column';
         buttonContainer.style.gap = '32px';
+
+        // Show images with class `.dropdownImage` and apply styles
+        container.parentNode.querySelectorAll('#dropdownImage').forEach(image => {
+            image.style.display = 'inline-block';
+            image.style.height = '131px';
+            image.style.width = '49%';
+            image.style.objectFit = 'cover';
+        });
+
+        // Hide the initial image with ID `productCardImageInitial`
+        const initialImage = container.parentNode.querySelector('#productCardImageInitial');
+        if (initialImage) initialImage.style.display = 'none';
     });
 });
 
@@ -33,7 +45,7 @@ document.querySelector('.closeMoreInfo').addEventListener('click', () => {
 
     // Find all "More Info" buttons and show them
     document.querySelectorAll('.moreInfoButton').forEach(button => {
-        button.style.display = 'inline-block';  // Show the "More Info" button
+        button.style.display = 'inline-block'; // Show the "More Info" button
     });
 
     // Show the arrow image
@@ -48,5 +60,15 @@ document.querySelector('.closeMoreInfo').addEventListener('click', () => {
     document.querySelectorAll('.productButtonContainer').forEach(buttonContainer => {
         buttonContainer.style.flexDirection = '';
         buttonContainer.style.gap = '';
+    });
+
+    // Hide images with class `.dropdownImage`
+    document.querySelectorAll('#dropdownImage').forEach(image => {
+        image.style.display = 'none';
+    });
+
+    // Show the initial image with ID `productCardImageInitial`
+    document.querySelectorAll('#productCardImageInitial').forEach(initialImage => {
+        initialImage.style.display = 'block';
     });
 });
