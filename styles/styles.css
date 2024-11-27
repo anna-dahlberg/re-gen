@@ -755,6 +755,10 @@ header {
     font-size: 24px;
 }
 
+.fontsize18px {
+    font-size: 18px;
+}
+
 #cloudContainer {
     display: flex;
     gap: 8px;
@@ -810,6 +814,12 @@ header {
     padding: 0;
 }
 
+/* Desktop product card */
+
+.productCardDesktop {
+    
+}
+
 /* Mobile Product Card */
 .productCardMobile {
     border: 1px solid var(--black); 
@@ -828,11 +838,6 @@ header {
     .productCardMobile {
         display: none; 
     }
-}
-
-.productCardDesktop {
-    width: 464px;
-    display: none;
 }
 
 @media (min-width: 768px) {
@@ -884,12 +889,11 @@ header {
     padding-top: 8px;
 }
 
-/* More info styling */
+/* More info styling mobile */
 
 .moreInfoList {
     list-style: none;
 }
-
 
 .dropdownContent {
     display: none; /* Hidden by default */
@@ -944,6 +948,83 @@ header {
     background-color: transparent;
 }
 
+/* More info styling Desktop */
+
+.dropOutContainer {
+    width: 928px; 
+    height: 652px; 
+    display: flex; 
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: none;
+}
+
+.dropOutImageContainer {
+    height: 100%;
+    width: 50%;
+}
+
+.dropOutImage {
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.dropOutInfoContainer {
+    width: 50%; 
+    height: 100%;
+    padding: 0 32px;
+}
+
+.dropOutButtonContainer {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 260px;
+}
+
+.closeDropOutButton {
+    border: none;
+    background-color: transparent;
+    padding-top: 35px;
+}
+
+.dropOutNav{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#borderTop {
+    border-top: 1px solid var(--black); 
+}
+
+.dropOutNavLinks {
+    border-bottom: 1px solid var(--black); 
+    width: 100%;
+    height: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+}
+
+.dropOutNavLinks a {
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--black);
+    font-size: 20px;
+
+}
+
+.dropOutNavLinks img {
+    height: 16px;
+    width: 16px;
+}
+
+
 
 /* Hover video styling */
 
@@ -986,6 +1067,18 @@ header {
 /* Product gallery button styling */
 
 .moreInfoButton {
+    border: 1px solid var(--black);
+    background-color: transparent;
+    display: flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.moreInfoButtonDesktop  {
     border: 1px solid var(--black);
     background-color: transparent;
     display: flex;
