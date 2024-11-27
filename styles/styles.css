@@ -91,6 +91,14 @@ body {
     font-weight: bold;
 }
 
+#newsletterDesktop {
+    display: none;
+}
+
+#newsletterMobile {
+    display: block;
+}
+
 @media (min-width: 1024px) {
     .newsLetterText {
         font-size: 14px;
@@ -103,7 +111,17 @@ body {
     .newsLetter p a {
         font-size: 14px;
     }
+
+    #newsletterDesktop {
+        display: block;
+    }
+
+    #newsletterMobile {
+        display: none;
+    }
 }
+
+
 
 .lineBreak {
     display: block;

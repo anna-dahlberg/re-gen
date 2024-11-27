@@ -62,7 +62,7 @@ function updateImage(index) {
         
         // Fade the image back in
         mainProductImage.style.opacity = 1;
-    }, 300); // Match this time with the transition duration in CSS
+    }, 100); // Match this time with the transition duration in CSS
 }
 
 function updateButtons(index) {
