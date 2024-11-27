@@ -1307,8 +1307,9 @@ header {
     }
 
     .communityTextContainer p {
-        font-size: 24px;
+        font-size: 20px;
         line-height: 150%;
+        margin: 0;
         font-weight: 300;
     }
 
@@ -1316,7 +1317,7 @@ header {
         min-height: 100vh;
     }
     .innerTextContainer {
-        max-width: 570px;
+        max-width: 370px;
     }
     
 }
