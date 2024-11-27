@@ -1,16 +1,15 @@
-- Main product bilder nya (ligger i assets) //Jonatan
 
-- Lägg till hero-animation //Jonatan
+- Ändra så färgnamnet ändras när man byter produktfärg på main product //Jonatan
 
-- Ändra text och knapppositionering hero - desktop //Jonatan
+- Lös mer info knapp desktop //Anna
 
-- Ändra så färgnamnet ändras när man byter produktfärg på main product
+- Main product desktop design och positionering 
 
-- Fixa position på communityButton för Desktop //Jonatan
+- Texten ska ändras på Newsletter bannern i desktop
 
-- Lös mer info knapp för mobil och desktop //Anna
+- Knapptexten i hero ska vara "Utforska ReGen Tech Collection"
 
-- Main product desktop design och positionering //Anna
+- Text-positionering Community Mobile
 
 Optional:
 

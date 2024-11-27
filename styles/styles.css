@@ -68,7 +68,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 48px;
+    height: 40px;
     padding:7px 20px;
     background-color: var(--blue);
     color: var(--white);
@@ -109,9 +109,8 @@ body {
     display: block;
 }
 
-
 header {
-    background-color: var(--beige);
+    background-color: rgba(255, 255, 255, 0);
 }
 .nav-desktop {
     display: none;
@@ -161,7 +160,7 @@ header {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 16px 48px;
+        padding: 2px 48px;
     }
 
     .nav-desktop {
@@ -513,7 +512,7 @@ header {
     }
     
     .heroPictureContainer h2 {
-        font-size: 42px;
+        font-size: 40px;
         font-style: normal;
         font-weight: 400;
         padding: 0;
@@ -522,8 +521,8 @@ header {
     
     .heroPictureContainer h3 {
         font-size: 48px;
-        font-style: normal;
-        font-weight: 400;
+        font-style: italic;
+        font-weight: 700;
         padding: 0;
         margin: 0;
     }
@@ -531,7 +530,7 @@ header {
     .hero-subtext {
         display: block;
         font-size: 20px !important;
-        padding-bottom: 38px;
+        padding-bottom: 30px;
         
     }
 
@@ -1044,7 +1043,7 @@ header {
 }
 
 .reUseLogo {
-   height: 162px;
+   height: 169px;
 }
 
 .reUseButton {
@@ -1063,6 +1062,7 @@ header {
 @media (min-width: 1024px) {
     .reUseSection {
         justify-content: start;
+        height: 800px;
     }
     .reUseContainer {
         height: 100%;
@@ -1071,7 +1071,12 @@ header {
         align-items: center;
     }
     .reUseContainer p {
-        max-width: 80%;
+        max-width: 55%;
+        line-height: 150%; 
+    }
+
+    .reUseLogo{
+        height: 288px;
     }
 }
 
@@ -1147,6 +1152,7 @@ header {
     .communityTextContainer p {
         font-size: 24px;
         line-height: 150%;
+        font-weight: 300;
     }
 
     .community {
