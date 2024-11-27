@@ -5,10 +5,6 @@
 
 - Main product desktop design och positionering 
 
-- Texten ska ändras på Newsletter bannern i desktop
-
-- Knapptexten i hero ska vara "Utforska ReGen Tech Collection"
-
 - Text-positionering Community Mobile
 
 Optional:

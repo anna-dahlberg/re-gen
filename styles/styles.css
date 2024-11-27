@@ -488,6 +488,14 @@ header {
     order: 3;
 }
 
+#heroButtonMobile {
+    display: block
+}
+
+#heroButtonDesktop {
+    display: none;
+}
+
 
 .heroPictureContainer h2 {
     font-size: 24px;
@@ -511,9 +519,7 @@ header {
     display: none;
 }
 
-.cta-hero-down {
-    display: none;
-}
+
 
 @media (min-width: 1024px) {
     .heroPictureContainer {
@@ -558,14 +564,18 @@ header {
         order: 2;
     }
 
-    .cta-hero-down {
-        display: block;
-    }
-
     .cta-hero {
         align-self: flex-start;
         margin-top: 0;
         order: 2;
+    }
+
+    #heroButtonMobile {
+        display: none
+    }
+    
+    #heroButtonDesktop {
+        display: block;
     }
 
     .cta-button {
