@@ -254,7 +254,7 @@ header {
 .news-overlay {
     display: flex;
     flex-direction: row;
-    height: 100vh;
+    min-height: 724px;
     
 }
 
@@ -699,6 +699,7 @@ header {
     width: 100%;
     padding: 16px;
     margin-top: 15px;
+    border: 1px solid var(--black);
 }
 .productHeaderDesktop {
     display: none;
@@ -751,6 +752,12 @@ header {
         padding: 20px;
     }
 
+    .productInfoCardContainer {
+        flex-basis: 45%;
+        padding: 0 10px;
+        height: 218px;
+    }
+
     .productHeader {
         display: none;
     }
@@ -795,6 +802,16 @@ header {
     display: flex;
     width: 100%;
     justify-content: space-between;
+}
+
+.productInfoCardContainer {
+    order: 3;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    padding: 8px 24px;
 }
 
 .productCardSection {
@@ -1302,13 +1319,12 @@ header {
     
 
     .communityTextContainer h2,.communityTextContainer h2 strong {
-        font-size: 40px;
+        font-size: 64px;
     }
 
     .communityTextContainer p {
-        font-size: 20px;
+        font-size: 24px;
         line-height: 150%;
-        margin: 0;
         font-weight: 300;
     }
 
@@ -1316,7 +1332,7 @@ header {
         min-height: 100vh;
     }
     .innerTextContainer {
-        max-width: 370px;
+        max-width: 570px;
     }
     
 }
