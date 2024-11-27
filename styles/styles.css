@@ -829,6 +829,10 @@ header {
     
 }
 
+.productCardDesktop {
+    display: none;
+}
+
 
 @media (min-width: 768px) {
     .productCardMobile {
@@ -904,6 +908,11 @@ header {
     display: block; /* Visible when active */
 }
 
+.dropDownNavContainer {
+    display: flex;
+    justify-content: center;
+}
+
 .dropDownNav{
     width: 278;
     height: auto;
@@ -919,7 +928,7 @@ header {
 
 .dropDownNavLinks {
     border-bottom: 1px solid var(--black); 
-    width: 230px;
+    min-width: 278px;
     height: 53px;
     display: flex;
     align-items: center;

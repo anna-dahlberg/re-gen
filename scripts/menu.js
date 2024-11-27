@@ -1,18 +1,25 @@
-//Newsletter window
+// Newsletter window
 
+const openNewsBtns = document.querySelectorAll(".newsletterLink");
 const closeNewsBtn = document.querySelector(".close-news-btn");
-const openNewsBtn = document.querySelector(".newsletterLink");
-openNewsBtn.addEventListener("click", function(event) {
-    event.preventDefault();
-    const menu = document.querySelector(".news-overlay");
-    menu.classList.toggle("menu-show");
+
+openNewsBtns.forEach(btn => {
+    btn.addEventListener("click", function(event) {
+        event.preventDefault();
+        const menu = document.querySelector(".news-overlay");
+        menu.classList.toggle("menu-show");
+    });
 });
 
-closeNewsBtn.addEventListener("click", function(event) {
-    event.preventDefault();
-    const menu = document.querySelector(".news-overlay");
-    menu.classList.toggle("menu-show");
-});
+
+if (closeNewsBtn) {
+    closeNewsBtn.addEventListener("click", function(event) {
+        event.preventDefault();
+        const menu = document.querySelector(".news-overlay");
+        menu.classList.toggle("menu-show");
+    });
+}
+
 
 
 
