@@ -806,7 +806,6 @@ header {
     align-items: flex-start;
     gap: 24px; 
     padding: 24px 16px;
-    width: 100vw;
     max-width: 1512px;
     margin: auto;
     min-height: 878px;
