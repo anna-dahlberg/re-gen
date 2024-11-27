@@ -254,7 +254,7 @@ header {
 .news-overlay {
     display: flex;
     flex-direction: row;
-    min-height: 724px;
+    height: 100vh;
     
 }
 
